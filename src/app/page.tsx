@@ -17,7 +17,7 @@ const articles = [
   {
     title:
       "Building a fully customisable carousel slider with swipe gestures and navigation using Framer Motion",
-    url: "https://medium.com/@jeyprox/building-a-fully-customisable-input-component-with-nextjs-reacthookfrom-tailwindcss-and-ts-58874a2e3450",
+    url: "https://medium.com/@jeyprox/building-a-fully-customisable-carousel-slider-with-swipe-gestures-navigation-and-custom-cursor-4e986ccbd08f",
   },
   {
     title:
