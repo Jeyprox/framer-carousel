@@ -17,18 +17,15 @@ const articles = [
   {
     title:
       "Building a fully customisable carousel slider with drag, navigation and swipe gestures using Framer Motion",
-    slug: "framer-carousel",
-    url: "https://medium.com/@jeyprox/handling-forms-in-nextjs-with-busboy-reacthookform-and-ts-3f86c70545b3",
+    url: "https://medium.com/@jeyprox/building-a-fully-customisable-input-component-with-nextjs-reacthookfrom-tailwindcss-and-ts-58874a2e3450",
   },
   {
     title:
       "Building a customisable Input component with NextJS, ReactHookForm, TailwindCSS and TypeScript",
-    slug: "custom-input",
     url: "https://medium.com/@jeyprox/building-a-fully-customisable-input-component-with-nextjs-reacthookfrom-tailwindcss-and-ts-58874a2e3450",
   },
   {
     title: "Handling Forms in NextJS with busboy, ReactHookForm and TypeScript",
-    slug: "framer-carousel",
     url: "https://medium.com/@jeyprox/handling-forms-in-nextjs-with-busboy-reacthookform-and-ts-3f86c70545b3",
   },
 ]
@@ -195,12 +192,16 @@ export default function SuggestedCarousel() {
           <Link
             className="text-sm underline underline-offset-2 hover:text-lime-300"
             href={"https://medium.com/@jeyprox"}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             to the article
           </Link>
           <Link
             className="text-sm underline underline-offset-2 hover:text-lime-300"
-            href={"https://github.com/jeyprox/framer-motion-carousel"}
+            href={"https://github.com/jeyprox/framer-carousel"}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             to the repo
           </Link>
