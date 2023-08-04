@@ -16,7 +16,7 @@ const CURSOR_SIZE = 80
 const articles = [
   {
     title:
-      "Building a fully customisable carousel slider with drag, navigation and swipe gestures using Framer Motion",
+      "Building a fully customisable carousel slider with swipe gestures and navigation using Framer Motion",
     url: "https://medium.com/@jeyprox/building-a-fully-customisable-input-component-with-nextjs-reacthookfrom-tailwindcss-and-ts-58874a2e3450",
   },
   {
@@ -66,10 +66,7 @@ export default function SuggestedCarousel() {
       return
     }
 
-    //TODO: make it more robust
-    // const offsetSearchIndex = activeSlide === 0 ? 1 : activeSlide - 1
     let offsetWidth = 0
-
     /*
       - start searching from currently active slide in the direction of the drag
       - check if the drag offset is greater than the width of the current item
@@ -254,10 +251,9 @@ export default function SuggestedCarousel() {
               x: animatedX,
             }}
             drag="x"
-            // dragMomentum={false}
             dragConstraints={{
-              left: -(509 * (articles.length - 1)),
-              right: 509,
+              left: -(FALLBACK_WIDTH * (articles.length - 1)),
+              right: FALLBACK_WIDTH,
             }}
             onMouseMove={({ currentTarget, clientX, clientY }) => {
               const parent = currentTarget.offsetParent
